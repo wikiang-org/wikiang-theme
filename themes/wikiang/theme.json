@@ -1,0 +1,111 @@
+{
+    "id": "wikiang",
+    "name": "Wikiang",
+    "version": "1.0.0",
+    "author": {
+        "name": "Wikiang",
+        "url": "https://wikiang.org"
+    },
+    "description": "위키피디아 스타일 문서 중심 테마. 깔끔한 타이포그래피, 좌측 목차, 편집 도구 모음을 제공합니다.",
+    "screenshot": "screenshot.png",
+    "angpleVersion": "0.1.0",
+    "tags": ["wiki", "documentation", "clean", "minimal", "encyclopedia"],
+    "settings": {
+        "branding": {
+            "siteName": {
+                "label": "사이트 이름",
+                "type": "text",
+                "default": "위키앙",
+                "description": "사이트 로고 옆에 표시되는 이름"
+            },
+            "tagline": {
+                "label": "태그라인",
+                "type": "text",
+                "default": "모두가 함께 만드는 백과사전",
+                "description": "사이트 이름 아래 표시"
+            },
+            "logoText": {
+                "label": "로고 텍스트",
+                "type": "text",
+                "default": "W",
+                "description": "로고 텍스트 (1~3글자)"
+            }
+        },
+        "appearance": {
+            "primaryColor": {
+                "label": "메인 색상",
+                "type": "color",
+                "default": "#3366cc",
+                "description": "위키 링크 및 액센트 색상"
+            },
+            "headerBackground": {
+                "label": "헤더 배경",
+                "type": "color",
+                "default": "#ffffff",
+                "description": "헤더 배경색"
+            },
+            "contentMaxWidth": {
+                "label": "본문 최대 너비",
+                "type": "select",
+                "default": "960",
+                "options": [
+                    { "label": "좁게 (720px)", "value": "720" },
+                    { "label": "보통 (960px)", "value": "960" },
+                    { "label": "넓게 (1200px)", "value": "1200" }
+                ],
+                "description": "문서 본문 영역 최대 너비"
+            },
+            "enableDarkMode": {
+                "label": "다크 모드",
+                "type": "boolean",
+                "default": true,
+                "description": "다크 모드 토글 활성화"
+            }
+        },
+        "features": {
+            "showToc": {
+                "label": "목차 사이드바",
+                "type": "boolean",
+                "default": true,
+                "description": "문서 좌측에 목차 사이드바 표시"
+            },
+            "showEditButton": {
+                "label": "편집 버튼",
+                "type": "boolean",
+                "default": true,
+                "description": "문서 상단에 편집 버튼 표시"
+            },
+            "showRevisionInfo": {
+                "label": "최근 수정 정보",
+                "type": "boolean",
+                "default": true,
+                "description": "문서 하단에 최근 수정 일시/사용자 표시"
+            },
+            "showBacklinks": {
+                "label": "관련 문서",
+                "type": "boolean",
+                "default": true,
+                "description": "문서 하단에 이 문서를 참조하는 다른 문서 목록"
+            }
+        }
+    },
+    "components": [
+        {
+            "id": "wikiang-background",
+            "name": "Wikiang Background",
+            "slot": "background",
+            "path": "components/wikiang-background.svelte",
+            "priority": 1
+        },
+        {
+            "id": "wikiang-landing-hero",
+            "name": "Wikiang Landing",
+            "slot": "landing-hero",
+            "path": "components/wikiang-landing-hero.svelte",
+            "priority": 10
+        }
+    ],
+    "hooks": [],
+    "category": "theme",
+    "license": "MIT"
+}

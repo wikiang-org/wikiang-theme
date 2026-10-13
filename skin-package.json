@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "wikiang-skins",
+  "version": "2.0.0",
+  "rendererApi": 1,
+  "registry": "skins/registry.ts",
+  "stylesheet": "skins/styles.css",
+  "skins": [
+    "standard",
+    "classic",
+    "reading",
+    "encyclopedia"
+  ],
+  "operator": "WIKIANG LLC"
+}

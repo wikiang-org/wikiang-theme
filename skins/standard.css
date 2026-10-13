@@ -1,0 +1,5 @@
+/* Standard skin builds on the host renderer v1 accessible document shell. */
+:root .wiki-layout[data-wiki-skin='standard'] {
+    --wiki-skin-accent: #315f9d;
+    --wiki-skin-dark-accent: #91b9ef;
+}
